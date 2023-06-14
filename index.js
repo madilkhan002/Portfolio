@@ -15,5 +15,9 @@ app.get('/about',(req,res)=>{
     res.render('about')
 })
 
+app.get('/projects',(req,res)=>{
+    res.render('projects')
+})
+
 
 app.listen(port,(err)=> console.log(`Listening to port ${port} .... `))
