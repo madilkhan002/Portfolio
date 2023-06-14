@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+     <!-- font awesome -->
+     <script src="https://kit.fontawesome.com/2103b082de.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <%- include('partials/navbar') %>
+
+    <div class="container">
+        <div class="achv">
+            <h1 id="start">Know Who <span class="purple-color">I'M</span></h1>
+            <br><br>
+            <h1 id="middle">Hi Everyone, I am Adil Khan from Faisalabad, Pakistan.</h1>
+            <h1 id="middle">I am a 3rd year undergraduate at Fast-Nuces CFD.</h1>
+            <br><br>
+            <h1 id="middle">Some of my competitive programming achievements are:</h1>
+            <br>
+            <h1 id="end"><i class="fas fa-circle fa-xs" style="color: purple;"></i></i> Knight (Max Rating 1957) in <span class="purple-color"><a href="https://leetcode.com/adil_kira/" target="_blank">leetcode</a></span> </h1>
+            <h1 id="end"><i class="fas fa-circle fa-xs" style="color: purple;"></i></i> 2 Times won FCAP Speed Programming Competition</h1>
+            <h1 id="end"><i class="fas fa-circle fa-xs" style="color: purple;"></i></i> 1 Time runner up FCAP Speed Programming Competition</h1>
+        </div>
+        <div class="image">
+            <img src="/images/about-page.jpg" alt="">
+        </div>
+        
+    </div>
+
+
+    <footer class="bg-gray-800 py-4 text-white">
+        <!-- Your footer content goes here -->
+        <div class="footer-container">
+            <h1>Designed and Developed by Adil Khan</h1>
+            <h1>Copyright © <%= new Date().getFullYear() %> Adil Khan</h1>
+            <div class="icon-footer-class">
+                <a href="https://www.linkedin.com/in/adil-khan-230271261/" id="icons-footer" target="_blank"><i class="fab fa-linkedin fa-1x rounded-full"></i></a>
+                <a href="https://github.com/madilkhan002" id="icons-footer" target="_blank"><i class="fab fa-github fa-1x rounded-full"></i></a>
+                <a href="https://www.instagram.com/adildot68/" id="icons-footer" target="_blank"><i class="fab fa-instagram fa-1x rounded-full"></i></a>
+                <a href="https://twitter.com/madilkhan002" id="icons-footer" target="_blank"><i class="fab fa-twitter fa-1x rounded-full"></i></a>
+            </div>
+      </footer>
+    
+    
+
+
+    <style>
+        html
+        {
+            height: 100%;
+            box-sizing: border-box;
+        }
+        body{
+            position: relative;
+            margin: 0;
+            min-height: 100%;
+            padding-bottom: 6.74rem;
+            box-sizing: inherit;
+        }
+        .container
+        {
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .achv
+        {
+            margin-bottom: 50px;
+        }
+
+        #start{
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        #middle
+        {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #end{
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        .purple-color{
+            color: purple;
+        }
+
+        .image{
+            width: 300px;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+     /* footer  */
+    .footer-container
+    {
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .icon-footer-class a
+    {
+        margin-left: 10px;
+    }
+
+
+    </style>
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/2103b082de.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <%- include('partials/navbar') %>
+  
+
+  <div class="container_profile">
+
+    <div class="profile_title">
+        <h1 id="profile_greet">Hey There!</h1>
+        <h1 id="profile_name">I'M <span class="clr-purple">ADIL KHAN</span></h1>
+        <br>
+        <h1 id="profile_text"><span class="clr-purple">Developer</span></h1>
+    </div>
+
+    <div class="profile_image">
+        <!-- <a href="https://www.freepik.com/free-vector/male-programmer-working-computer-office-wall-with-hanging-reminder-stickers-developer-creating-new-software-interface-coding-programming-system-administrator-designer-character_25273349.htm#query=man%20computer&position=6&from_view=keyword&track=ais">Image by studio4rt</a> on Freepik -->
+        <img src="/images/image.jpg" alt="profile image">
+    </div>
+    
+  </div>
+
+
+  <div class="container_introduction">
+    <div class="introduction "text-lg font-medium text-gray-900 dark:text-white"">
+        <br>
+        <h1 id="intro">LET ME <span class="clr-purple">INTRODUCE</span> MYSELF</h1>
+        <br><br>
+        <h1 id="intro_text1">I am a 3rd year undergraduate at FAST-NUCES CFD</h1>
+        <br>
+        <h1 id="intro_text1">I love <span class="clr-purple"><i><a href="https://leetcode.com/adil_kira/" target="_blank">problem solving</a></i></span></h1>
+        <br>
+        <h1 id="intro_text1">My field of Interest's are building new  <span class="clr-purple">Web Technologies and Products</span>.</h1>
+        <br>
+        <h1 id="intro_text1">I am a tech geek and always learn and explore things related to <span class="clr-purple">Technology and Softwares</span>.</h1>
+        <br>
+        <h1 id="intro_text1">I also have knowledge of <span class="clr-purple">Android and Desktop Development</span>.</h1>
+        <br>
+        <h1 id="intro_text1">Currently I'm learning different <span class="clr-purple">System Design Concepts</span> to make an application fast and scalable.</h1>
+        <br>
+        <h1 id="intro_text1">My hobbies are watching <span class="clr-purple">anime and cricket</span>.</h1>
+    </div>
+
+    <div class="intro_image">
+        <!-- <a href="https://www.freepik.com/free-vector/male-programmer-working-computer-office-wall-with-hanging-reminder-stickers-developer-creating-new-software-interface-coding-programming-system-administrator-designer-character_25273349.htm#query=man%20computer&position=6&from_view=keyword&track=ais">Image by studio4rt</a> on Freepik -->
+        <img src="/images/avatar.png" alt="Intro image">
+    </div>
+  </div>
+
+  <div class="container-findme">
+    <div>
+        <h1 id="findme-line1">FIND ME ON</h1>
+        <br>
+        <h1 id="findme-line2">Feel free to <span class="clr-purple">connect</span> with me</h1>
+        <a href="https://www.linkedin.com/in/adil-khan-230271261/" id="icons" target="_blank"><i class="fab fa-linkedin fa-2x rounded-full linkedin1"></i></a>
+        <a href="https://github.com/madilkhan002" id="icons" target="_blank"><i class="fab fa-github fa-2x rounded-full github1"></i></a>
+        <a href="https://www.instagram.com/adildot68/" id="icons" target="_blank"><i class="fab fa-instagram fa-2x rounded-full instagram1"></i></a>
+        <a href="https://twitter.com/madilkhan002" id="icons" target="_blank"><i class="fab fa-twitter fa-2x rounded-full twitter1"></i></a>
+    </div>
+  </div>
+
+ 
+  
+  <%- include('partials/footer') %>
+
+
+
+  <style>
+
+    .container_profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .profile_image{
+        width: 500px;
+        height: 500px;
+        margin-left: 10px;
+    }
+
+    #profile_greet{
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 30px;
+    }
+
+    #profile_name{
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 30px;
+    }
+
+    #profile_text{
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 40px;
+    }
+
+
+    /* Introduction*/
+
+    .container_introduction {
+        margin-top: 200px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .intro_image{
+        width: 300px;
+        height: 200px;
+        margin-left: 30px;
+    }
+
+    #intro{
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 30px;
+    }
+
+    #intro_text1{
+        font-size: 20px;
+        /* font-weight: bold; */
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    
+    /* find and connect */
+    .container-findme {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+
+    #findme-line1
+    {
+        margin-top: 50px;
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 30px;
+    }
+    #findme-line2
+    {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 40px;
+        margin-right: 45px;
+        margin-bottom: 30px;
+    }
+
+    /* icon */
+
+    #icons
+    {
+       padding: 30px;
+    }
+
+    .linkedin1 {
+        color: #0077B5; /* Set the desired color */
+        font-size: 2rem; /* Adjust the font size as needed */
+        border-radius: 50%; /* Make the icon round */
+        padding: 0.2rem; /* Add some padding to create space around the icon */
+        background-color: #fff; /* Set the background color */
+    }
+
+    .linkedin1:hover {
+        color: #004471;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .github1 {
+        /* Add your GitHub icon styles here */
+        color: #333; /* Set the desired color */
+        font-size: 2rem; /* Adjust the font size as needed */
+        border-radius: 50%; /* Make the icon round */
+        padding: 0.2rem; /* Add some padding to create space around the icon */
+        background-color: #fff; /* Set the background color */
+    }
+
+    .github1:hover {
+        /* Add your hover styles here */
+        /* For example, you can change the color or add a box-shadow */
+        color: black;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    
+    .instagram1{
+        /* Add your Instagram icon styles here */
+        color: #e4405f; /* Set the desired color */
+        font-size: 2rem; /* Adjust the font size as needed */
+        border-radius: 50%; /* Make the icon round */
+        padding: 0.2rem; /* Add some padding to create space around the icon */
+        background-color: #fff; /* Set the background color */
+    }
+
+    .instagram1:hover {
+        /* Add your hover styles here */
+        /* For example, you can change the color or add a box-shadow */
+        color: #c13584;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+
+    .twitter1{
+        /* Add your Twitter icon styles here */
+        color: #1da1f2; /* Set the desired color */
+        font-size: 2rem; /* Adjust the font size as needed */
+        border-radius: 50%; /* Make the icon round */
+        padding: 0.2rem; /* Add some padding to create space around the icon */
+        background-color: #fff; /* Set the background color */
+    }
+
+    .twitter1:hover {
+        /* Add your hover styles here */
+        /* For example, you can change the color or add a box-shadow */
+        color: #1a91da;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+
+    .clr-purple
+    {
+        color: purple;
+    }
+
+  </style>
+
+
+<script>
+    setInterval(function() {
+        var profileText = document.getElementById("profile_text");
+        var newText = "";
+
+        if (profileText.textContent === "Developer") {
+            newText = "Competitive Programmer";
+        } else if (profileText.textContent === "Competitive Programmer") {
+            newText = "Open Source Contributor";
+        } else {
+            newText = "Developer";
+        }
+
+        var interval = 100; // Delay between each character (in milliseconds)
+        var currentIndex = 0;
+
+        var textInterval = setInterval(function() {
+
+            if (currentIndex >= newText.length) {
+                clearInterval(textInterval);
+                profileText.textContent = newText;
+                profileText.style.setProperty("animation", "cursor-blink 0.7s infinite");
+            } else {
+                profileText.style.color = "purple"; // Set the desired text color
+                profileText.innerHTML = newText.substring(0, currentIndex+1) + `<span class="cursor">|</span>`;
+                currentIndex++;
+            }
+        }, interval);
+    }, 4000);
+</script>
+
+
+
+
+
+
+    
+</body>
+</html>
