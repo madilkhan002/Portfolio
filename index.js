@@ -3,11 +3,11 @@ const app = express();
 const path = require('path');
 
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 9000;
 
 // set the views
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '/.netlify/functions/views'))
+app.set('views', 'functions/views');
 app.use(express.static('public'));
 
 app.get('/',(req,res)=>{
