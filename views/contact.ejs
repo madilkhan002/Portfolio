@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/2103b082de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <%- include('partials/navbar') %>
+    <div class="container">
+        <div id="text">
+            <h1 id="head">Get In Touch With <span style="color: purple;">Me</span></h1>
+            <br>
+            <h1 id="mail">Email : <span style="color: purple;"><a href="mailto:ranaadil571@gmail.com">ranaadil571@gmail.com</a></span>
+            </h1>
+            <h1 id="message">Send me Message : <span style="color: purple;"><a href="https://ngl.link/adildot68" target="_blank">https://ngl.link/adildot68</a></span>
+            </h1>
+        </div>
+        <div>
+            <img src="/images/contact.jpg" alt="contact image">
+        </div>
+    </div>
+    
+    <%- include('partials/footer') %>
+
+    <style>
+        html
+        {
+            height: 100%;
+            box-sizing: border-box;
+        }
+        body{
+            position: relative;
+            margin: 0;
+            min-height: 100%;
+            padding-bottom: 6.74rem;
+            box-sizing: inherit;
+        }
+
+        .container{
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        #text{
+            text-align: center;
+        }
+        #head{
+            font-size: 40px;
+            margin: 10px;
+        }
+        #mail{
+            margin: 10px 10px 10px 20px;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        #message{
+            margin: 10px 10px 40px 20px;
+            font-size: 20px;
+        }
+
+    </style>
+
+
+</body>
+</html>
